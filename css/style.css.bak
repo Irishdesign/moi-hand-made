@@ -1,0 +1,293 @@
+/* 載入Google字型 */
+@import url(https://fonts.googleapis.com/earlyaccess/notosanstc.css);
+
+/********** 基礎樣式 **********/
+html{
+    /* 外距值歸零 */
+    margin: 0;
+    /* 內距值歸零 */
+    padding: 0;
+}
+
+body{
+    /* 字型 */
+    font-family: 'Noto Sans TC',"Microsoft YaHei", sans-serif;
+    /* 顏色 */
+    color: #2b2b2b;
+}
+
+a, a:active, a:hover, a:link, a:visited {
+    /* 取消連結底線 */
+    text-decoration: none;
+    /* 取消按下時的藍色外框 */
+    outline: none;
+    /* 顏色 */
+    color: #2b2b2b;
+}
+a:hover{
+    /* 顏色 */
+    color: #999;
+}
+
+h2, .title-color{
+    /* 顏色 */
+    color: #0099d1;
+}
+
+/********** logo **********/
+@media screen and (max-width: 768px){
+    .navbar-brand img{
+        /* 寬度 */
+        width: 40px;
+    }
+}
+
+.fb-logo{
+    width: 40px;
+    height: 40px;
+    padding: 1px;
+    border:2px solid #888;
+    border-radius: 10px;
+}
+
+.moi-class{
+    width: 140px;
+    height: 40px;
+    padding: 2px;
+    margin-right: 5px;
+    border-radius:15px;
+    display: inline-block;
+    border:2px solid #888;
+}
+.logo-top{
+    clip-path: circle(80px at center); 
+}
+.logo-border{
+    padding: 1px;
+    border:2px solid #888;
+    border-radius: 100px;
+}
+
+.nav-icon{
+    padding: 1px;
+    border:2px solid #888;
+    border-radius: 15px;
+}
+
+div.row.index-img-center{
+	width:100%
+}
+.index-img{
+	margin:0 200px;
+
+}
+/********** 產品服務card效果 **********/
+.product-categories > a{
+    /* 變形-縮放-維持目前尺寸 */
+    transform: scale(1);
+    /* 過渡效果 */
+    transition: transform .4s ease-out;
+}
+.product-categories > a:hover{
+    /* 變形-縮放-放大1.02倍 */
+    transform: scale(1.02);
+    /* 陰影 */
+    box-shadow: 4px 4px 10px #999;
+}
+/********** aboutme **********/
+.aboutme{
+ 
+background-image:url(../aboutme-bg.jpg);
+background-repeat:no-repeat;
+background-attachment: fixed;
+background-position: center;
+background-size: cover;
+        
+}
+.aboutme-dark{
+background-color:rgba(0,0,0,0.4);
+background-repeat:no-repeat;
+background-attachment: fixed;
+background-position: center;
+background-size: cover;
+        
+}
+.bg-halfW{
+ 	background-color:rgba(225,225,225,1);
+ }
+/********** footer-menu **********/
+.footer-menu{
+    /* 區塊元素 */
+    display: block;
+    /* 清除符號樣式 */
+    list-style: none;
+    /* 內距值歸零 */
+    padding: 0;
+    /* 外距值歸零 */
+    margin: 0;
+}
+.footer-menu > li{
+    /* 行內元素 */
+    display: inline-block;
+    /* 向右外距 */
+    margin-right: 1rem;
+}
+.footer-menu > li > a{
+    /* 顏色 */
+    color: #fff;
+    /* 上下內距值為1rem，左右外距值為0 */
+    padding: 1rem 0;
+}
+.footer-menu > li > a:hover{
+    /* 顏色 */
+    color: #999;
+}
+@media screen and (max-width: 768px){
+    .send-btn{
+        /* 寬度 */
+        width: 100%;
+    }
+}
+
+/********** 頁面高度 **********/
+.page-content{
+    /* 最小高度 */
+    min-height: 700px;
+}
+
+/********** 商品 **********/
+.col-row1{
+	margin-top:15px;
+	padding-right: 0px; 
+	height:400px;
+	overflow:hidden;
+}
+.col-row2{
+	margin-top:15px;
+	padding-right: 0px; 
+	height:300px;
+	overflow:hidden;
+}
+
+.col-colorA{ 
+	background-color:#F4F4F4;
+	height:400px;
+}
+.col-colorB{ 
+	background-color:#C3D6CC;
+	height:400px;
+}
+.col-colorC{ 
+	background-color:#D9B6A5;
+	height:400px;
+}
+.col-colorG{ 
+	background-color:#F4F4F4;
+	height:300px;
+}
+.col-colorE{ 
+	background-color:#E0D4CE;
+
+	height:300px;
+}
+.col-colorF{ 
+	background-color:#D2DDE2;
+	height:300px;
+}
+.col-colorD{ 
+	background-color:#D1C49B;
+	height:300px;
+}
+.prod img{
+	margin:auto auto;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	padding:10px;
+	vertical-align:middle;
+}
+
+
+#sw:hover{
+        -webkit-animation: swing 1.5s ease;
+        animation: swing 1.5s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+        cursor:pointer;
+      }
+
+.choose h3{
+	  padding-right: 10px;
+    margin-left: 10px;
+}
+.sm-bnt-div{
+   padding-left:180px;
+}
+.md-bnt-div{
+   padding-left:35px;
+   display:inline;
+}
+.sm-bnt{
+	margin:0 3px;
+	display:inline;
+}
+
+@media only screen and (max-width: 768px){
+	.sm-bnt-div{
+   padding-left:120px;
+   }
+	.sm-bnt{
+	margin:0 3px;
+	display:inline;
+	}
+}
+/********** 購物清單 **********/
+
+.hr-bolder{
+	color:#888;
+	border:1px dashed;
+}
+
+.choose-color{
+	width:100%;
+	height:50px;
+	
+}
+.color-square{
+  border:1px #000 solid;
+	height:30px;
+	width:30px;
+	display:inline-block;
+}
+.color-square .A{
+	background-color:red;
+}
+
+	
+
+
+/********** 購物清單移除商品按鈕 **********/
+
+
+/********** 商品分類 **********/
+
+
+
+@media screen and (max-width: 768px){
+    .product-thumbnail{
+        /* 將區塊隱藏 */
+        display: none;
+    }
+    .product-quantity input{
+        /* 寬度 */
+        width: 100%;
+    }
+}
+
+
+#banner{
+	width:1300px;
+	height:540px;
+	display:central;
+}
+
